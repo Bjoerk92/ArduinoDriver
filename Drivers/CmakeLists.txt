@@ -1,9 +1,15 @@
 cmake_minimum_required(VERSION 3.22)
 
 project(Drivers VERSION 1.0
-        DESCRIPTION "Drivers for the ArduinoSys project"
-        LANGUAGES C CXX)
+    DESCRIPTION "Drivers for the ArduinoSys project"
+    LANGUAGES C CXX)
 
 add_library(Drivers INTERFACE AVR_Drivers.h)
 
-target_link_libraries(Drivers INTERFACE ArduinoSys)
+target_link_libraries(Drivers INTERFACE 
+    ArduinoSys
+    PIN
+)
+
+
+add_subdirectory(PIN)
