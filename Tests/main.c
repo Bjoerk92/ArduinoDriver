@@ -8,12 +8,14 @@
  * @copyright Copyright (c) 2026
  * 
  */
+
 #include "Atmega.h"
 #include "AVR_Drivers.h"
 
 int main (void) {
     
     while (1) {
+
         // Main loop
     }
     return 0;
