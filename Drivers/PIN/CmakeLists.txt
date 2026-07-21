@@ -10,4 +10,4 @@ target_include_directories(PIN PUBLIC
 )
 
 
-target_link_libraries(PIN PRIVATE ArduinoSys)
+target_link_libraries(PIN PRIVATE AVR_CMSIS)
