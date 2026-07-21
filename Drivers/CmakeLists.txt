@@ -6,8 +6,13 @@ project(Drivers VERSION 1.0
 
 add_library(Drivers INTERFACE AVR_Drivers.h)
 
+target_include_directories(Drivers INTERFACE 
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<INSTALL_INTERFACE:include>
+)
+
 target_link_libraries(Drivers INTERFACE 
-    ArduinoSys
+    AVR_CMSIS
     PIN
 )
 
