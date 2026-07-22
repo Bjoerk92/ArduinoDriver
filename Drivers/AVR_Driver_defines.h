@@ -14,4 +14,6 @@ typedef enum DRV_STATUS_ETag {
     DRV_OK = 0,
     DRV_ERROR = 1,
     DRV_NOT_SUPPORTED = 2,
+    DRV_BAD_PARAM = 3,
+    DRV_BUSY = 4
 } DRV_STATUS_e;

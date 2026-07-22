@@ -11,5 +11,3 @@
 #pragma once
 
 #include "AVR_Driver_defines.h"
-
-#include "pin.h"
