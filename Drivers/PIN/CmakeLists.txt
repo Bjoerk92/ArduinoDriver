@@ -9,4 +9,4 @@ target_include_directories(PIN PUBLIC
 )
 
 
-target_link_libraries(PIN PRIVATE AVR_CMSIS)
+target_link_libraries(PIN PRIVATE AVR_CMSIS Drivers)
